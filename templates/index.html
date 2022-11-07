@@ -10,6 +10,8 @@
   <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename= 'bootstrap.min.css')}}">
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename= 'dice.css')}}">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.2.0/socket.io.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 
 </head>
 
@@ -364,7 +366,7 @@
                 <img src={{ url_for('static', filename='img/dice_1.png')}} id="die-1" class="die">
 {#                <img src="img/dice_2.png" id="die-2" class="die">#}
               </div>
-              <button class="dice-button" onclick="roll()">ROLL</button>
+              <button class="dice-button">ROLL</button>
             </div>
           </div>
         </div>
